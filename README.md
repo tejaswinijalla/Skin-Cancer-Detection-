@@ -7,7 +7,6 @@ ________________________________________
 Features
 Disease Detection
 •	Upload a skin image for analysis.
-
 •	Deep Learning model predicts the skin disease.
 •	Displays prediction confidence score.
 •	Shows confidence level (High, Medium, Low).
