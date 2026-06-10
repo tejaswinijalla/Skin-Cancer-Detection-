@@ -7,6 +7,7 @@ ________________________________________
 Features
 Disease Detection
 •	Upload a skin image for analysis.
+
 •	Deep Learning model predicts the skin disease.
 •	Displays prediction confidence score.
 •	Shows confidence level (High, Medium, Low).
@@ -17,6 +18,7 @@ Disease Information
 •	Precautionary measures.
 Nearby Hospital Recommendation
 •	Uses user location.
+
 •	Finds nearby hospitals and clinics.
 •	Displays distance from the user.
 •	Provides Google Maps directions.
