@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f8fc;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:40px 20px;
+color:#333;
+}
+
+/* title */
+
+h2{
+margin-bottom:25px;
+color:#2c3e50;
+font-size:28px;
+}
+
+/* form */
+
+form{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+text-align:center;
+margin-bottom:25px;
+width:320px;
+}
+
+/* file input */
+
+input[type="file"]{
+margin-bottom:15px;
+}
+
+/* buttons */
+
+button{
+background:#2f80ed;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:6px;
+cursor:pointer;
+font-size:14px;
+transition:0.3s;
+}
+
+button:hover{
+background:#1c6cd5;
+transform:translateY(-1px);
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* result section */
+
+#result{
+margin-top:20px;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+text-align:center;
+max-width:400px;
+display:none;
+}
+
+#result img{
+border-radius:8px;
+margin-bottom:10px;
+}
+
+/* hospital button */
+
+button[onclick]{
+margin-top:30px;
+}
+
+/* hospital list */
+
+#hospital_list{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:12px;
+margin-top:20px;
+}
+
+.hospital-card{
+background:white;
+padding:12px;
+border-radius:8px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+text-align:left;
+font-size:14px;
+line-height:1.4;
+}
+
+.hospital-card h3{
+margin:0 0 6px 0;
+font-size:16px;
+}
+
+.hospital-card p{
+margin:3px 0;
+}
+
+.direction-btn{
+display:inline-block;
+margin-top:6px;
+padding:6px 10px;
+font-size:13px;
+background:#27ae60;
+color:white;
+border-radius:4px;
+text-decoration:none;
+}
+
+/* hospital text */
+
+#hospital_list b{
+font-size:17px;
+color:#2c3e50;
+}
+
+/* links */
+
+a{
+display:inline-block;
+margin-top:6px;
+background:#27ae60;
+color:white;
+padding:6px 14px;
+border-radius:5px;
+text-decoration:none;
+font-size:13px;
+transition:0.2s;
+}
+
+a:hover{
+background:#1f8f4f;
+box-shadow:0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* remove separator lines */
+
+hr{
+display:none;
+}
