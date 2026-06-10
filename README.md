@@ -107,26 +107,10 @@ Skin Diseases Detected
 •	Melanocytic Nevi (NV)
 •	Vascular Lesions (VASC)
 ________________________________________
-Project Structure
-Skin-Disease-Detection/
-│
-├── static/
-│   ├── uploads/
-│   └── styles
-│
-├── templates/
-│   ├── index.html
-│   ├── appointment.html
-│   └── appointment_confirm.html
-│
-├── skin_disease_mobilenet.h5
-├── app.py
-├── requirements.txt
-└── README.md
-________________________________________
+
 How to Run
 Clone Repository
-git clone https://github.com/yourusername/skin-disease-detection.git
+git clone https://github.com/tejaswinijalla/skin-disease-detection.git
 cd skin-disease-detection
 Install Dependencies
 pip install -r requirements.txt
