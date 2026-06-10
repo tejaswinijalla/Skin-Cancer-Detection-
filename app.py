@@ -11,7 +11,7 @@ from flask_mail import Mail, Message
 import time
 
 
-# ✅ AI IMPORT
+
 from openai import OpenAI
 
 app = Flask(__name__)
@@ -29,7 +29,7 @@ app.config['MAIL_PASSWORD'] = 'xyjxyrqewrurxbpn'
 
 mail = Mail(app)
 
-# ✅ AI CLIENT (uses environment variable)
+# AI CLIENT (uses environment variable)
 client = OpenAI()
 # ---------------- Load AI Model ----------------
 model = tensorflow.keras.models.load_model("skin_disease_mobilenet.h5")
