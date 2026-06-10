@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Appointment</title>
+
+<style>
+body{
+font-family:Arial;
+background:#f2f6fc;
+text-align:center;
+}
+
+.form-box{
+background:white;
+padding:25px;
+width:350px;
+margin:auto;
+margin-top:50px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input{
+width:90%;
+padding:10px;
+margin:10px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+padding:10px 18px;
+background:#2f80ed;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="form-box">
+
+<h2>Book Appointment</h2>
+
+<form action="/book_appointment" method="POST">
+
+<input type="hidden" name="hospital" value="{{ hospital }}">
+
+<p><b>Hospital:</b> {{ hospital }}</p>
+
+<input type="text" name="name" placeholder="Enter Name" required>
+
+<input type="email" name="email" placeholder="Enter Email" required>
+
+<input type="date" name="date" required>
+
+<br><br>
+
+<button type="submit">Confirm Appointment</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
