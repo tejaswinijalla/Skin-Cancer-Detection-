@@ -6,7 +6,7 @@ This project was developed as a Final Year B.Tech project to demonstrate the pra
 ________________________________________
 Features
 Disease Detection
-1.upload a skin image for analysis.
+1. upload a skin image for analysis.
 2. Deep Learing model predicts the skin disease.
 3. Showa confidence level(High, Medium, Low).
 
