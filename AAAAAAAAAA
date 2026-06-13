@@ -1,6 +1,6 @@
-# AI-Powered Skin Cancer Detection and Hospital Recommendation System
+**AI-Powered Skin Cancer Detection and Hospital Recommendation System**
 
-## Overview
+**Overview**
 
 This project is an AI-based web application developed to assist users in identifying common skin diseases from uploaded skin images. The system uses Deep Learning techniques to analyze skin lesion images and predict the most likely disease category.
 
@@ -10,47 +10,47 @@ This project was developed as a Final Year B.Tech project to demonstrate the pra
 
 ---
 
-# Features
+**Features**
 
-## Disease Detection
+**Disease Detection**
 
 1. Upload a skin image for analysis.
 2. Deep Learning model predicts the skin disease.
 3. Displays prediction confidence score.
 4. Shows confidence level (High, Medium, Low).
 
-## Disease Information
+**Disease Information**
 
 1. Displays the predicted disease name.
 2. Shows symptoms of the detected disease.
 3. Recommends the appropriate specialist.
 4. Provides precautionary measures.
 
-## Nearby Hospital Recommendation
+**Nearby Hospital Recommendation**
 
 1. Uses the user's current location.
 2. Finds nearby hospitals and clinics.
-3. Displays the distance from the user.
+3. Displays distance from the user.
 4. Provides Google Maps directions.
 
-## Appointment Booking
+**Appointment Booking**
 
 1. Allows users to book appointments.
 2. Generates appointment time slots automatically.
 3. Sends appointment confirmation emails.
 
-## AI Medical Chatbot
+**AI Medical Chatbot**
 
-1. Answers questions related to the detected disease.
-2. Powered by Llama 3.1 using the Groq API.
-3. Provides symptoms, precautions, treatments, and guidance.
+1. Answers user queries related to the detected disease.
+2. Powered by Llama 3.1 through the Groq API.
+3. Provides symptoms, precautions, treatments, and general guidance.
 
-## Email Notifications
+**Email Notifications**
 
 1. Sends appointment confirmation emails.
 2. Allows report sharing through email.
 
-## Downloadable Medical Report
+**Downloadable Medical Report**
 
 1. Generates a patient-friendly report.
 2. Includes uploaded image.
@@ -62,90 +62,90 @@ This project was developed as a Final Year B.Tech project to demonstrate the pra
 
 ---
 
-# Technology Stack
+**Technology Stack**
 
-## Frontend
+**Frontend**
 
 1. HTML
 2. CSS
 3. JavaScript
 
-## Backend
+**Backend**
 
 1. Python
 2. Flask
 
-## Deep Learning
+**Deep Learning**
 
 1. TensorFlow
 2. Keras
 3. MobileNetV2 (Transfer Learning)
 
-## Data Processing
+**Data Processing**
 
 1. NumPy
 2. OpenCV
 
-## APIs and Services
+**APIs and Services**
 
 1. OpenStreetMap
 2. Overpass API
 3. Groq API
 4. Gmail SMTP
 
-## Dataset
+**Dataset**
 
 1. HAM10000 Skin Lesion Dataset
 
 ---
 
-# Project Workflow
+**Project Workflow**
 
 1. User uploads a skin image.
-2. Flask backend receives the image.
+2. Flask backend receives the uploaded image.
 3. Image preprocessing is performed.
-4. MobileNetV2 model analyzes the image.
+4. MobileNetV2 analyzes the image.
 5. Disease prediction is generated.
 6. Confidence score is calculated.
-7. Disease details are displayed.
-8. User location is collected.
-9. Nearby hospitals are fetched using OpenStreetMap.
-10. User can view nearby hospitals.
-11. User can get navigation directions.
-12. User can book appointments.
+7. Disease information is displayed.
+8. User location is collected through the browser.
+9. Nearby hospitals are fetched using OpenStreetMap and Overpass API.
+10. Hospitals are displayed with distance information.
+11. User can get navigation directions through Google Maps.
+12. User can book appointments with nearby hospitals.
 13. User can interact with the AI medical chatbot.
-14. User can download or share reports.
+14. User can download or share the medical report.
 
 ---
 
-# Model Details
+**Model Details**
 
-## Model Used
+**Model Used**
 
-1. MobileNetV2 with Transfer Learning.
+1. MobileNetV2 with Transfer Learning
 
-## Why MobileNetV2?
+**Why MobileNetV2?**
 
 1. Lightweight architecture.
 2. Faster prediction speed.
 3. Suitable for web deployment.
 4. Good performance on limited datasets.
 
-## Training Techniques
+**Training Techniques**
 
-1. Data Augmentation.
-2. Class Weighting.
-3. Image Normalization.
-4. Validation-Based Evaluation.
+1. Data Augmentation
+2. Class Weighting
+3. Image Normalization
+4. Validation-Based Evaluation
 
-## Performance
+**Performance**
 
-1. Validation Accuracy: Approximately 70%.
-2. Supports multi-class skin disease classification.
+1. Validation Accuracy: Approximately 70%
+2. Multi-class skin disease classification
 
 ---
 
-# Skin Diseases Detected
+**Skin Diseases Detected**
 
 1. Actinic Keratoses (AKIEC)
 2. Basal Cell Carcinoma (BCC)
@@ -157,28 +157,86 @@ This project was developed as a Final Year B.Tech project to demonstrate the pra
 
 ---
 
-# How to Run
+**Project Structure**
 
-## Step 1: Clone Repository
-
-1. git clone https://github.com/tejaswinijalla/skin-disease-detection.git
-2. cd skin-disease-detection
-
-## Step 2: Install Dependencies
-
-1. pip install -r requirements.txt
-
-## Step 3: Run Application
-
-1. python app.py
-
-## Step 4: Open Browser
-
-1. http://127.0.0.1:5000
+```text
+Skin-Disease-Detection/
+│
+├── static/
+│   ├── uploads/
+│   └── styles/
+│
+├── templates/
+│   ├── index.html
+│   ├── appointment.html
+│   └── appointment_confirm.html
+│
+├── skin_disease_mobilenet.h5
+├── app.py
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-# Future Improvements
+**Output Screenshots**
+
+**Home Page**
+
+(Add Screenshot Here)
+
+**Disease Prediction Result**
+
+(Add Screenshot Here)
+
+**Nearby Hospital Recommendation**
+
+(Add Screenshot Here)
+
+**Appointment Booking**
+
+(Add Screenshot Here)
+
+**AI Medical Chatbot**
+
+(Add Screenshot Here)
+
+**Medical Report**
+
+(Add Screenshot Here)
+
+---
+
+**How to Run**
+
+**Clone Repository**
+
+```bash
+git clone https://github.com/tejaswinijalla/skin-disease-detection.git
+cd skin-disease-detection
+```
+
+**Install Dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+**Run Application**
+
+```bash
+python app.py
+```
+
+**Open Browser**
+
+```text
+http://127.0.0.1:5000
+```
+
+---
+
+**Future Improvements**
 
 1. User Login and Registration.
 2. Patient History Management.
@@ -191,7 +249,7 @@ This project was developed as a Final Year B.Tech project to demonstrate the pra
 
 ---
 
-# Limitations
+**Limitations**
 
 1. The system is a prototype developed for educational and research purposes.
 2. Predictions should not be considered a final medical diagnosis.
@@ -200,7 +258,7 @@ This project was developed as a Final Year B.Tech project to demonstrate the pra
 
 ---
 
-# My Contribution
+**My Contribution**
 
 1. Deep Learning model integration.
 2. Flask backend development.
@@ -211,43 +269,13 @@ This project was developed as a Final Year B.Tech project to demonstrate the pra
 
 ---
 
-# Output Screenshots
-
-### Home Page
-
-(Add Screenshot Here)
-
-### Disease Prediction Result
-
-(Add Screenshot Here)
-
-### Hospital Recommendation
-
-(Add Screenshot Here)
-
-### Appointment Booking
-
-(Add Screenshot Here)
-
-### AI Chatbot
-
-(Add Screenshot Here)
-
-### Medical Report Download
-
-(Add Screenshot Here)
-
----
-
-# Conclusion
-
-This project demonstrates how Artificial Intelligence can assist in early skin disease screening and healthcare accessibility.
+**Conclusion**
 
 1. Detects skin diseases using Deep Learning.
 2. Recommends nearby hospitals.
 3. Supports appointment booking.
 4. Provides AI-powered medical assistance.
 5. Generates downloadable reports.
-6. Combines healthcare and AI into a single platform.
+6. Demonstrates the practical use of AI in healthcare applications.
 
-The project serves as a healthcare support prototype and can be extended into a real-world medical assistance platform with larger datasets, medical validation, and cloud deployment.
+This project serves as a healthcare support prototype and showcases how Artificial Intelligence can assist in early skin disease screening and healthcare accessibility.
