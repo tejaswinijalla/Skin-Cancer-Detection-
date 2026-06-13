@@ -6,10 +6,10 @@ This project was developed as a Final Year B.Tech project to demonstrate the pra
 ________________________________________
 Features
 Disease Detection
-•	Upload a skin image for analysis.
-•	Deep Learning model predicts the skin disease.
-•	Displays prediction confidence score.
-•	Shows confidence level (High, Medium, Low).
+1.upload a skin image for analysis.
+2. Deep Learing model predicts the skin disease.
+3. Showa confidence level(High, Medium, Low).
+
 Disease Information
 •	Predicted disease name.
 •	Symptoms of the detected disease.
