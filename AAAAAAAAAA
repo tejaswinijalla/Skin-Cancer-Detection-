@@ -1,6 +1,6 @@
- AI-Powered Skin Cancer Detection and Hospital Recommendation System
+# AI-Powered Skin Cancer Detection and Hospital Recommendation System
 
-Overview
+## Overview
 
 This project is an AI-based web application developed to assist users in identifying common skin diseases from uploaded skin images. The system uses Deep Learning techniques to analyze skin lesion images and predict the most likely disease category.
 
@@ -8,16 +8,18 @@ Along with disease prediction, the application provides nearby hospital recommen
 
 This project was developed as a Final Year B.Tech project to demonstrate the practical application of Artificial Intelligence in the healthcare domain.
 
-Features
+---
 
-Disease Detection
+# Features
+
+## Disease Detection
 
 1. Upload a skin image for analysis.
 2. Deep Learning model predicts the skin disease.
 3. Displays prediction confidence score.
 4. Shows confidence level (High, Medium, Low).
 
-Disease Information
+## Disease Information
 
 1. Displays the predicted disease name.
 2. Shows symptoms of the detected disease.
