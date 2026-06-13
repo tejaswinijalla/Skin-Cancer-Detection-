@@ -1,149 +1,173 @@
 AI-Powered Skin Cancer Detection and Hospital Recommendation System
 Overview
+
 This project is an AI-based web application developed to assist users in identifying common skin diseases from uploaded skin images. The system uses Deep Learning techniques to analyze skin lesion images and predict the most likely disease category.
+
 Along with disease prediction, the application provides nearby hospital recommendations, appointment booking functionality, an AI-powered medical chatbot, email notifications, and downloadable medical reports.
+
 This project was developed as a Final Year B.Tech project to demonstrate the practical application of Artificial Intelligence in the healthcare domain.
-________________________________________
+
 Features
 Disease Detection
-1. upload a skin image for analysis.
-2. Deep Learing model predicts the skin disease.
-3. Showa confidence level(High, Medium, Low).
-
+Upload a skin image for analysis.
+Deep Learning model predicts the skin disease.
+Displays prediction confidence score.
+Shows confidence level (High, Medium, Low).
 Disease Information
-•	Predicted disease name.
-•	Symptoms of the detected disease.
-•	Recommended specialist.
-•	Precautionary measures.
+Displays the predicted disease name.
+Shows symptoms of the detected disease.
+Recommends the appropriate specialist.
+Provides precautionary measures.
 Nearby Hospital Recommendation
-•	Uses user location.
-
-•	Finds nearby hospitals and clinics.
-•	Displays distance from the user.
-•	Provides Google Maps directions.
+Uses the user's current location.
+Finds nearby hospitals and clinics.
+Displays the distance from the user.
+Provides Google Maps directions.
 Appointment Booking
-•	Book appointments with recommended hospitals.
-•	Automatically generates appointment time slots.
-•	Sends confirmation emails to users.
+Allows users to book appointments.
+Generates appointment time slots automatically.
+Sends appointment confirmation emails.
 AI Medical Chatbot
-•	Users can ask questions regarding their detected disease.
-•	Powered using Llama 3.1 through Groq API.
-•	Provides symptoms, precautions, treatments, and general guidance.
+Answers questions related to the detected disease.
+Powered by Llama 3.1 using the Groq API.
+Provides symptoms, precautions, treatments, and guidance.
 Email Notifications
-•	Appointment confirmation emails.
-•	Report sharing through email.
+Sends appointment confirmation emails.
+Allows report sharing through email.
 Downloadable Medical Report
-•	Generate a patient-friendly report.
-•	Includes:
-o	Uploaded image
-o	Disease prediction
-o	Confidence score
-o	Symptoms
-o	Precautions
-o	Specialist recommendation
-________________________________________
+Generates a patient-friendly report.
+Includes uploaded image.
+Includes disease prediction result.
+Includes confidence score.
+Includes symptoms.
+Includes precautions.
+Includes specialist recommendation.
 Technology Stack
 Frontend
-•	HTML
-•	CSS
-•	JavaScript
+HTML
+CSS
+JavaScript
 Backend
-•	Python
-•	Flask
+Python
+Flask
 Deep Learning
-•	TensorFlow
-•	Keras
-•	MobileNetV2 (Transfer Learning)
+TensorFlow
+Keras
+MobileNetV2 (Transfer Learning)
 Data Processing
-•	NumPy
-•	OpenCV
-APIs & Services
-•	OpenStreetMap (Hospital Search)
-•	Overpass API
-•	Groq API (AI Chatbot)
-•	Gmail SMTP (Email Service)
+NumPy
+OpenCV
+APIs and Services
+OpenStreetMap
+Overpass API
+Groq API
+Gmail SMTP
 Dataset
-•	HAM10000 Skin Lesion Dataset
-________________________________________
+HAM10000 Skin Lesion Dataset
 Project Workflow
-1.	User uploads a skin image.
-2.	Flask backend receives the image.
-3.	Image preprocessing is performed.
-4.	MobileNetV2 model predicts the disease.
-5.	Confidence score is calculated.
-6.	Disease details are displayed.
-7.	User location is collected.
-8.	Nearby hospitals are fetched using OpenStreetMap.
-9.	User can:
-o	View hospitals
-o	Get directions
-o	Book appointments
-o	Chat with AI assistant
-o	Download reports
-________________________________________
+User uploads a skin image.
+Flask backend receives the image.
+Image preprocessing is performed.
+MobileNetV2 model analyzes the image.
+Disease prediction is generated.
+Confidence score is calculated.
+Disease details are displayed.
+User location is collected.
+Nearby hospitals are fetched using OpenStreetMap.
+User can view nearby hospitals.
+User can get navigation directions.
+User can book appointments.
+User can interact with the AI medical chatbot.
+User can download or share reports.
 Model Details
 Model Used
-MobileNetV2 with Transfer Learning
+MobileNetV2 with Transfer Learning.
 Why MobileNetV2?
-•	Lightweight architecture
-•	Faster prediction speed
-•	Suitable for web deployment
-•	Good performance on limited datasets
+Lightweight architecture.
+Faster prediction speed.
+Suitable for web deployment.
+Good performance on limited datasets.
 Training Techniques
-•	Data Augmentation
-•	Class Weighting
-•	Image Normalization
-•	Validation-Based Evaluation
+Data Augmentation.
+Class Weighting.
+Image Normalization.
+Validation-Based Evaluation.
 Performance
-•	Validation Accuracy: Approximately 70%
-•	Multi-class skin disease classification
-________________________________________
+Validation Accuracy: Approximately 70%.
+Supports multi-class skin disease classification.
 Skin Diseases Detected
-•	Actinic Keratoses (AKIEC)
-•	Basal Cell Carcinoma (BCC)
-•	Benign Keratosis (BKL)
-•	Dermatofibroma (DF)
-•	Melanoma (MEL)
-•	Melanocytic Nevi (NV)
-•	Vascular Lesions (VASC)
-________________________________________
-
+Actinic Keratoses (AKIEC)
+Basal Cell Carcinoma (BCC)
+Benign Keratosis (BKL)
+Dermatofibroma (DF)
+Melanoma (MEL)
+Melanocytic Nevi (NV)
+Vascular Lesions (VASC)
 How to Run
-Clone Repository
+Step 1: Clone Repository
 git clone https://github.com/tejaswinijalla/skin-disease-detection.git
 cd skin-disease-detection
-Install Dependencies
+Step 2: Install Dependencies
 pip install -r requirements.txt
-Run Application
+Step 3: Run Application
 python app.py
-Open Browser
+Step 4: Open Browser
 http://127.0.0.1:5000
-________________________________________
 Future Improvements
-•	User Login and Registration
-•	Patient History Management
-•	Cloud Deployment
-•	Multi-language Support
-•	Doctor Dashboard
-•	Real-Time Hospital Database
-•	Medical Report PDF Generation
-•	Improved Model Accuracy with Larger Datasets
-________________________________________
+User Login and Registration.
+Patient History Management.
+Cloud Deployment.
+Multi-language Support.
+Doctor Dashboard.
+Real-Time Hospital Database.
+Enhanced Medical Report Generation.
+Improved Accuracy with Larger Datasets.
 Limitations
-•	The system is a prototype developed for educational and research purposes.
-•	Predictions should not be considered a final medical diagnosis.
-•	Accuracy depends on image quality and dataset coverage.
-•	Professional medical consultation is always recommended.
-________________________________________
+The system is a prototype developed for educational and research purposes.
+Predictions should not be considered a final medical diagnosis.
+Accuracy depends on image quality and dataset coverage.
+Professional medical consultation is always recommended.
 My Contribution
-As part of the project development, I worked on:
-•	Deep Learning model integration
-•	Flask backend development
-•	Disease prediction workflow
-•	Hospital recommendation module
-•	AI chatbot integration
-•	Frontend and backend integration
-________________________________________
-Conclusion
-This project demonstrates how Artificial Intelligence can assist in early skin disease screening and healthcare accessibility. By combining Deep Learning, hospital recommendations, appointment booking, and conversational AI, the system provides a complete healthcare support prototype that can be extended into a real-world medical assistance platform.
+Deep Learning model integration.
+Flask backend development.
+Disease prediction workflow implementation.
+Hospital recommendation module development.
+AI chatbot integration.
+Frontend and backend integration.
+Output Screenshots
+Home Page
 
+(Add Screenshot Here)
+
+Disease Prediction Result
+
+(Add Screenshot Here)
+
+Hospital Recommendation
+
+(Add Screenshot Here)
+
+Appointment Booking
+
+(Add Screenshot Here)
+
+AI Chatbot
+
+(Add Screenshot Here)
+
+Medical Report Download
+
+(Add Screenshot Here)
+
+Conclusion
+
+This project demonstrates how Artificial Intelligence can assist in early skin disease screening and healthcare accessibility.
+
+Detects skin diseases using Deep Learning.
+Recommends nearby hospitals.
+Supports appointment booking.
+Provides AI-powered medical assistance.
+Generates downloadable reports.
+Combines healthcare and AI into a single platform.
+
+The project serves as a healthcare support prototype and can be extended into a real-world medical assistance platform with larger datasets, medical validation, and cloud deployment.
